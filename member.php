@@ -1,15 +1,8 @@
 <?php
 session_start();
-?>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-</head>
-<body>
-<?php
+
+include "drop.php";
+include_once "member.html";
 
 $name = $_SESSION['userdata'];
 
@@ -24,7 +17,5 @@ if(empty($_SESSION['userdata'])){
     echo "<br>";
     echo "<a href=logout.php>Logout</a> ";
 }
-?>
 
-</body>
-</html>
+footer();

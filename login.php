@@ -1,7 +1,8 @@
 <?php
 session_start();
  
-include_once "template.html";
+include_once "login.html";
+include "drop.php";
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
@@ -47,4 +48,5 @@ $password = "123456";
     }
 
 }
-?>
+
+footer();
